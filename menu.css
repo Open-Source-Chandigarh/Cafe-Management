@@ -1,0 +1,127 @@
+body {
+    /* background-color: rgb(111, 85, 85); */
+    background: url(images/coffee-beans-top-view-white-background-space-text_176474-5028.avif);
+    background-color: rgba(0, 0, 0, 0.587);
+    background-blend-mode: darken;
+}
+
+.table-responsive {
+    width: 584px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.text-bg-dark {
+    text-align: center;
+    padding: 20px;
+    font-size: 60px;
+    font-family: fantasy;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+}
+
+.btn,
+.btn:hover,
+.btn:focus {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-color: rgb(215, 94, 94);
+    color: white;
+}
+
+.btn:active {
+    background-color: rgb(215, 94, 94) !important;
+}
+
+table {
+    caption-side: top;
+}
+
+table caption{
+    text-align: center;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    color:rgb(255, 158, 39);
+    
+}
+
+table, caption{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+th, td{
+    color: white;
+}
+
+tr:hover td{
+    color:rgb(255, 255, 255) !important;
+}
+
+.btn-primary{
+    background-color: blue;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    display: block;
+}
+.wrapper .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    background-color: white;
+    /* visibility: hidden; */
+}
+
+.close{
+    text-align: center;
+    padding-top: 5px;
+}
+
+div.col h3{
+    padding-left: 10px;
+}
+
+.sidebar .row{
+    padding-top: 10px;
+}
+
+.sidebar{
+    background-color:darkgrey !important;
+}
+
+.cartprice{
+    text-align: end;
+}
+
+.cartq{
+    text-align: center;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.remove{
+    background-color: rgb(222, 86, 86);
+    border: 1px;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.fb{
+    background-color: rgb(222, 86, 86);
+    width: 80%;
+    border-radius: 8px;
+    border: 1px;
+}
+
+.cartsidebar{
+    background-color: black;
+    width: 100px;
+}

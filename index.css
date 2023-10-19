@@ -1,0 +1,15 @@
+a.btn{
+    padding: 10px;
+    font-size: 1.25rem;
+}
+
+.imdiv{
+    height: 600px;
+    background: url(images/cafe.webp) center / cover;
+    background-color:rgb(0,0,0, .3);
+    background-blend-mode: darken;
+}
+
+.written{
+    max-width: 350px;
+}
