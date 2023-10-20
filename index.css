@@ -1,7 +1,31 @@
-a.btn{
-    padding: 10px;
-    font-size: 1.25rem;
+*{
+    margin: 0;
+    padding: 0;
+   
+    
 }
+body{overflow-x: hidden;}
+@font-face {
+    font-family: myfont;
+    src: url(Freeland.ttf);
+}
+::-webkit-scrollbar{
+    width: 0.6rem;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(232,219,207);
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: rgb(73,56,51);
+    border-radius: 20px;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(154, 119, 108);
+
+}
+
 
 .imdiv{
     height: 600px;
@@ -10,6 +34,213 @@ a.btn{
     background-blend-mode: darken;
 }
 
-.written{
-    max-width: 350px;
+
+section{
+    width: 100vw;    
+}
+.buy-but{
+    height: 50px;
+    width: 175px;
+    background-color: black;
+    color: antiquewhite;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    outline: none;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: 3px;
+   font-family: myfont;
+
+}
+.down-container-1{
+    background-color: rgb(201,163,119);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+    padding: 10px;
+    justify-content: space-around;
+    padding-top: 16px;
+    padding-bottom: 26px;
+}
+.down-container-1 img{
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+}
+img{
+    transition: 1s;
+    
+}
+img:hover{
+    transform: scale(1.1,1.1);
+}
+
+
+.down-container-2{
+    background-color: rgb(232,219,207);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 29px;
+}
+
+.down-container-2 img{
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.down-container-2-about-us{
+    height: 300px;
+    width: 500px;
+    background-color: rgb(201,163,119);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 23px;
+    color: rgb(73,56,51);
+    border-radius: 20px;
+    align-items: center;
+}
+.down-container-2-about-us h1{
+    overflow: hidden;
+    font-weight: bold;
+    color: rgb(73,56,51);
+    font-family: myfont;
+}
+down-container-2-about-us-p{
+    text-align: justify;
+   
+    padding-right: 51px;
+    border: 2px solid black;
+}
+.down-container-3{
+    background-color: rgb(73,56,51);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 29px;
+
+}
+.down-container-3 img{
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.gallery{
+    width: 100vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display:flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: rgb(201,163,119);
+    justify-content: center;
+    align-items: center;
+}
+.gallery-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   row-gap: 20px;
+   column-gap: 20px;
+   padding-left: 30px;
+    
+}
+.gallery h1{
+    font-family: myfont;
+    color: rgb(73,56,51);;
+}
+
+.gallery-grid img{
+    height: 300px;
+    width: 390px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.down-container-4{
+    
+    background-color: rgb(201,163,119);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 29px;
+    border-radius: 20px;
+
+}
+.down-container-4 h1{
+    font-family: myfont;
+}
+.down-container-4 img{
+    height: 200px;
+}
+.middle-down-container-4{
+    
+    height: 30vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(73,56,51);
+    
+}
+.getinput{
+    border: 2px solid rgb(212,183,151);
+    padding: 7px;
+}
+.getinput input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(73,56,51);
+}
+.getinput button{
+    background-color:rgb(73,56,51);
+    color: white;
+    ;
+    padding: 7px;
+    width: 80px;
+}
+.middle-down-container-4-big{
+    height: 90vh;
+    background-color:rgb(73,56,51) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    row-gap: 40px;
+}
+.k{
+    height: 40vh;
+    width: 90vw;
+
 }
