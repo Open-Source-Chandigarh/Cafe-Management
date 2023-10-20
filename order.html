@@ -25,7 +25,7 @@
 
     <title>Document</title>
   </head>
-  <body>
+  <body><!-- Giving some margins to this whole page will work alot better as design.-->
     <nav
       class="navbar navbar-light navbar-expand-md navbar-fixed-top navigation-clean-button"
     >
@@ -107,16 +107,16 @@
       </div>
     </nav>
     <div class="container step1">
-      <div class="row">
-          <h2> Step 1 - My Awesome Cart Express Checkout - Review Your Cart items </h2>
-          <div class="row">
-            <div id="items">
-              <!-- items will be added here -->
-            </div>
-
+      <a class="hide_as_link" href="./menu.html">
+        <h2> Step 1 - My Awesome Cart Express Checkout - Review Your Cart items </h2>
+        <div class="row">
+          <div id="items">
+            <!-- items will be added here -->
           </div>
-      </div>
+        </div>
+      </a>
   </div>
+  
   <div class="col my-4">
     <h2> Step 2 - Enter Address & Other Details</h2>
     <form class="row g-3">
@@ -130,7 +130,8 @@
       </div>
       <div class="col-12">
         <label for="inputAddress" class="form-label">Email Address</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234xyz@gmail.com">
+        <!-- Set email address as not required.-->
       </div>
       <div class="col-12">
         <label for="inputAddress2" class="form-label">Address</label>

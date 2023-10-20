@@ -89,3 +89,10 @@ body{
     border-radius: 20px;
     text-align: center;
 }
+.hide_as_link {
+    text-decoration: none;
+    color: #000000;
+}
+.hide_as_link :active {
+    color: #000000;
+}

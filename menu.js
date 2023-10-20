@@ -14,6 +14,7 @@ $(document).ready(function () {
         var ids = $(this).attr("id");
         if (cart[ids] != undefined) {
             cart[ids].quantity += 1;
+
         } else {
             let itemname = $("#item"+ids).text();
             let itemprice = $("#price"+ids).text();
@@ -78,10 +79,12 @@ function updatecart(cart){
     for(var item in cart){
         if(cart[item].quantity==0){
             delete cart[item];
-            document.getElementById("r"+item).innerHTML=`<button id="`+item+`" class="btn cart" type="button">Add</button>`;
+            document.getElementById("r"+item).innerHTML=`<button id="${item}" class="btn cart" type="button">Add</button>`;
         }
         else{
-            document.getElementById("r"+item).innerHTML="<button id='minus"+item+"' class='btn minus'>-</button><div id='val"+item+"' style='text-align:center;'>"+cart[item].quantity+"</div><button id='plus"+item+"' class='btn plus'>+</button>";
+            document.getElementById("r"+item).innerHTML=`<div><button id='minus${item}' class='btn minus'> -</button></div>
+                                                         <div id='val${item}' style='text-align:center;'> ${cart[item].quantity} </div>
+                                                         <div><button id='plus${item}' class='btn plus'>+ </button></div>`;
         }
     }
     localStorage.setItem('cart', JSON.stringify(cart));
@@ -101,7 +104,7 @@ function addtocart(cart){
         </div>
         <div class="col-md-6">
             <div class="row cartprice"><strong>Rs.`+cart[item].price+`</strong></div>
-            <div class="row rem"><button class="remove" id="remove`+item+`">remove</button></div>
+            <div class="row rem"><button class="remove" id="remove${item}">remove</button></div>
         </div>
     </div>`;
     }
@@ -112,7 +115,7 @@ function addtocart(cart){
 //clear cart by looping through cart and deleting all items
 function clearcart(cart){
     for( let item in cart){
-        document.getElementById("r"+item).innerHTML=`<button id="`+item+`" class="btn cart" type="button">Add</button>`;
+        document.getElementById("r"+item).innerHTML=`<button id="${item}" class="btn cart" type="button">Add</button>`;
     }
     localStorage.clear();
     for(let i in cart){
