@@ -7,7 +7,7 @@ An online portal for a cafe for ordering coffee or snacks or whatever else it of
 
 ## Demo
 
-To experience this project go to https://kavyam172.github.io/Cafe-Management/
+To experience this project go to [https://kavyam172.github.io/Cafe-Management/](https://open-source-chandigarh.github.io/Cafe-Management/)
 
 
 ## Contributing
