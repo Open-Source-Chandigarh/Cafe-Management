@@ -1,3 +1,33 @@
+.navbar.navbar-light.navbar-expand-md.navbar-fixed-top.navigation-clean-button{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.942);
+
+}
+strong{
+    font-size: 2rem;
+}
+.container#navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 42.7em;
+}
+.collapse.navbar-collapse{
+    background-color: rgba(19, 19, 19, 0.862);
+}
+.collapse.navbar-collapse ul li::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    display: block;
+    background-color: white;
+    color: white;
+    transition: all 1s;
+   
+}
+.collapse.navbar-collapse ul li:hover::after{
+    width: 100%;
+}
 body{
     background: url(images/sf.jpg);
     background-color: rgba(0, 0, 0, 0.226);
