@@ -4,10 +4,13 @@
     background-color: rgba(0, 0, 0, 0.942);
 
 }
+strong{
+    font-size: 2rem;
+}
 .container#navbar{
     display: flex;
     flex-direction: row;
-    gap: 45.8em;
+    gap: 42.7em;
 }
 .collapse.navbar-collapse{
     background-color: rgba(19, 19, 19, 0.862);
@@ -24,7 +27,6 @@
 }
 .collapse.navbar-collapse ul li:hover::after{
     width: 100%;
-    background-color: grey;
 }
 a.btn{
     padding: 10px;
@@ -33,7 +35,7 @@ a.btn{
     transition: box-shadow 1s;
 }
 a.btn:hover{
-    box-shadow: 2px 2px 0px 0px white;
+    box-shadow: 7px 7px 0px 0px white;
 }
 a.btn::after{
     content: '';
