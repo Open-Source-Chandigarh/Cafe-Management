@@ -33,9 +33,12 @@ a.btn{
     font-size: 1.25rem;
     width: 40%;   
     transition: box-shadow 1s;
+    background-color: rgba(230, 116, 34, 0.66);
+    border: none;
 }
 a.btn:hover{
-    box-shadow: 7px 7px 0px 0px white;
+    box-shadow: 7px 7px 0px 0px rgb(36, 36, 36);
+    background-color: rgb(230, 116, 34);
 }
 a.btn::after{
     content: '';
