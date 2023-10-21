@@ -1,15 +1,67 @@
+.navbar.navbar-light.navbar-expand-md.navbar-fixed-top.navigation-clean-button{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.942);
+
+}
+.container#navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 45.8em;
+}
+.collapse.navbar-collapse{
+    background-color: rgba(19, 19, 19, 0.862);
+}
+.collapse.navbar-collapse ul li::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    display: block;
+    background-color: white;
+    color: white;
+    transition: all 1s;
+   
+}
+.collapse.navbar-collapse ul li:hover::after{
+    width: 100%;
+    background-color: grey;
+}
 a.btn{
     padding: 10px;
     font-size: 1.25rem;
+    width: 40%;   
+    transition: box-shadow 1s;
+}
+a.btn:hover{
+    box-shadow: 2px 2px 0px 0px white;
+}
+a.btn::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.942);
+    border-radius: 10px;
+    transition: all 1s;
+    
+}
+a.btn:hover::after{
+    width: 100%;
+    
 }
 
 .imdiv{
-    height: 600px;
+    height: 89.5vh;
     background: url(images/cafe.webp) center / cover;
     background-color:rgb(0,0,0, .3);
     background-blend-mode: darken;
+    background-repeat: no-repeat;
+    
 }
 
 .written{
     max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
