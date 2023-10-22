@@ -25,7 +25,7 @@ Steps to contribute:
 6. Create a pull request from the forked repository to this repository.Make sure to provide a concise title and description.Your pull request will only be accepted if the issue is assigned to you.
 
 We will review your code and merge it into the project. 
-Please adhere to the code of conduct.
+Please adhere to the code of conduct mentioned in [code_of_conduct.md](https://github.com/Open-Source-Chandigarh/Cafe-Management/blob/main/conduct_of_code.md).
 
 Thanks for contributing!
 
