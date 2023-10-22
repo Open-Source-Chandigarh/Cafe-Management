@@ -125,3 +125,9 @@ div.col h3{
     background-color: black;
     width: 100px;
 }
+
+.flex-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
+}
