@@ -4,13 +4,10 @@
     background-color: rgba(0, 0, 0, 0.942);
 
 }
-strong{
-    font-size: 2rem;
-}
 .container#navbar{
     display: flex;
     flex-direction: row;
-    gap: 42.7em;
+    gap: 45.8em;
 }
 .collapse.navbar-collapse{
     background-color: rgba(19, 19, 19, 0.862);
@@ -27,25 +24,23 @@ strong{
 }
 .collapse.navbar-collapse ul li:hover::after{
     width: 100%;
+    background-color: grey;
 }
 a.btn{
     padding: 10px;
     font-size: 1.25rem;
     width: 40%;   
     transition: box-shadow 1s;
-    background-color: rgba(230, 116, 34, 0.66);
-    border: none;
 }
 a.btn:hover{
-    box-shadow: 7px 7px 0px 0px rgb(36, 36, 36);
-    background-color: rgb(230, 116, 34);
+    box-shadow: 2px 2px 0px 0px white;
 }
 a.btn::after{
     content: '';
     width: 0;
     height: 2px;
     display: block;
-    background-color: rgba(214, 209, 209, 0.848);
+    background-color: rgba(0, 0, 0, 0.942);
     border-radius: 10px;
     transition: all 1s;
     
@@ -56,17 +51,12 @@ a.btn:hover::after{
 }
 
 .imdiv{
-    height: 89.5vh;
+    height: 600px;
     background: url(images/cafe.webp) center / cover;
     background-color:rgb(0,0,0, .3);
     background-blend-mode: darken;
-    background-repeat: no-repeat;
-    
 }
 
 .written{
     max-width: 350px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
