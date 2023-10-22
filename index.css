@@ -1,10 +1,32 @@
 a.btn{
     padding: 10px;
     font-size: 1.25rem;
+    width: 40%;   
+    transition: box-shadow 1s;
+    background-color: rgb(233, 115, 31);
+    border: none;
+}
+a.btn:hover{
+    box-shadow: 7px 7px 0px 0px black;
+    background-color: rgb(233, 100, 5);
+}
+a.btn::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.942);
+    border-radius: 10px;
+    transition: all 1s;
+    
+}
+a.btn:hover::after{
+    width: 100%;
+    
 }
 
 .imdiv{
-    height: 600px;
+    height: 92vh;
     background: url(images/cafe.webp) center / cover;
     background-color:rgb(0,0,0, .3);
     background-blend-mode: darken;
@@ -12,4 +34,16 @@ a.btn{
 
 .written{
     max-width: 350px;
+    animation-name: fade-up;
+    animation-duration: 3s;
+}
+@keyframes fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(80px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
 }
