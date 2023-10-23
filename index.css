@@ -47,3 +47,50 @@ a.btn:hover::after{
         transform: translateY(0px) scale(1);
     }
 }
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    /* Position the footer at the bottom of the page */
+    width: 100%;
+    background-color: transparent;
+  }
+  
+  .footerContainer {
+    width: 100%;
+    background-color: transparent;
+  }
+  
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  
+  .socialIcons a i {
+    font-size: 1cm;
+    color: rgb(21, 16, 16);
+    opacity: 0.9;
+  }
+  
+  .socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+    color: rgb(42, 39, 39);
+  }
+  
+  .FooterBottom {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+  }
+  
