@@ -15,14 +15,15 @@
             font-family: Arial, sans-serif;
             background-color: rgb(111, 85, 85);
         }
-        .container {
-            max-width: 800px;
+        .containerr {
+            max-width: 600px;
             margin: 0 auto;
             padding: 40px;
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             margin-top: 100px;
+            max-height: 380px;
         }
         .sign{
             text-align: center; /* Center align content */
@@ -57,8 +58,50 @@
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-light navbar-expand-md navbar-fixed-top navigation-clean-button">
+        <div class="container">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynav"><span
+                    class="visually-hidden">.</span><span class="navbar-toggler-icon"></span></button>
+            <div>
+                <a href="index.html" class="navbar-brand
+                "><span><strong>The Cafe</strong></span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="mynav">
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active" style="color:rgb(255, 255, 255);">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" href="#"
+                            style="color:rgba(255, 255, 255);">Services</a>
+                        <div class="dropdown-menu">
+                            <a href="menu.html" class="dropdown-item bg-dark" data-bss-hover-animate="pulse"
+                                style="color:rgba(255, 255, 255);">Menu</a>
+                            <a href="order.html" class="dropdown-item bg-dark d-fle" data-bss-hover-animate="pulse"
+                                style="color:rgba(255, 255, 255);">Your Order</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link active" style="color:rgba(255, 255, 255);">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active" style="color:rgba(255, 255, 255);">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faq.html" class="nav-link active" style="color:rgba(255, 255, 255);">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="signup.html" class="nav-link active" style="color:rgba(255, 255, 255);">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link active" style="color:rgba(255, 255, 255);">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- Your login form starts here -->
-    <div class="container">
+    <div class="containerr">
         <h2 class="sign">Login</h2>
         <form action="login_form.php" method="post">
             <div class="form-group">
@@ -73,6 +116,7 @@
                 <button type="submit">Login</button>
             </div>
         </form>
+        <p>Don't have an account? <a href="signup.html">Sign Up here</a>.</p>
     </div>
     <!-- Your login form ends here -->
 </body>
