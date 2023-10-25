@@ -1,0 +1,131 @@
+
+.faq-section {
+    background-image: url('./images/cafe.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    text-align: center;
+    padding: 2rem;
+}
+
+.faq-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-item {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.faq-question.open {
+    background-color: #e1e1e1;
+}
+
+.arrow {
+    font-weight: bold;
+}
+
+.faq-answer {
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
+}
+
+.faq-answer:hover{
+    background-color:rgb(195, 93, 38);
+}
+
+/* Customer review section */
+.customer-reviews {
+    background-image: url('./images/cafe.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.customer-reviews h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.review-list {
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px; 
+}
+
+.review {
+    border: 1px solid #fff;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.review:hover{
+    background: rgb(195, 93, 38);
+}
+
+.review img {
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    margin-bottom: 10px;
+}
+
+.reviewer-info span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+}
+
+.review-content {
+    margin-top: 10px;
+}
+
+.review-content p{
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+}
+
+.star-rating {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.star {
+    color: #FFD700;
+}
