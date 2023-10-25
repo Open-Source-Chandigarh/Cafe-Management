@@ -1,6 +1,6 @@
 h2{
     text-align: center;
-    background-color: black;
+    background-color: rgb(85, 54, 0);
     color: white;
     padding: 20px;
     margin-top: 10px;
@@ -9,10 +9,10 @@ h2{
     margin-bottom: 1%;
 }
 
-.row{
+row{
     width: 100%;
     margin: 0px;
-}
+} 
 
 form{
     padding: 20px;
@@ -97,3 +97,4 @@ body{
 .hide_as_link :active {
     color: #000000;
 }
+

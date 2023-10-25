@@ -81,33 +81,62 @@
   <div class="col my-4">
     <h2> Step 2 - Enter Address & Other Details</h2>
     <form class="row g-3">
-      <div class="col-md-6">
+      <div class="col-md-6" >
         <label for="inputEmail4" class="form-label">Name</label>
         <input type="text" class="form-control" id="inputEmail4" required>
-      </div>
+      </div> 
       <div class="col-md-6">
         <label for="inputphone" class="form-label">Number</label>
         <input type="tel" class="form-control" id="inputPassword4" maxlength="10" required>
       </div>
       <div class="col-12">
         <label for="inputAddress" class="form-label">Email Address</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+        <input type="email" class="form-control" id="inputAddress" placeholder="email@ServiceProvider.com" required>
       </div>
       <div class="col-12">
         <label for="inputAddress2" class="form-label">Address</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" required>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio or floor" required>
+      </div>
+   
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select" required>
+          <option selected>Select your State</option>
+          <option>Andhra Pradesh</option>
+        <option>Arunachal Pradesh</option>
+        <option>Assam</option>
+        <option>Bihar</option>
+        <option>Chhattisgarh</option>
+        <option>Goa</option>
+        <option>Gujarat</option>
+        <option>Haryana</option>
+        <option>Himachal Pradesh</option>
+        <option>Jharkhand</option>
+        <option>Karnataka</option>
+        <option>Kerala</option>
+        <option>Madhya Pradesh</option>
+        <option>Maharashtra</option>
+        <option>Manipur</option>
+        <option>Meghalaya</option>
+        <option>Mizoram</option>
+        <option>Nagaland</option>
+        <option>Odisha</option>
+        <option>Punjab</option>
+        <option>Rajasthan</option>
+        <option>Sikkim</option>
+        <option>Tamil Nadu</option>
+        <option>Telangana</option>
+        <option>Tripura</option>
+        <option>Uttar Pradesh</option>
+        <option>Uttarakhand</option>
+        <option>West Bengal</option>
+        </select>
       </div>
       <div class="col-md-6">
         <label for="inputCity" class="form-label">City</label>
         <input type="text" class="form-control" id="inputCity" required>
       </div>
-      <div class="col-md-4">
-        <label for="inputState" class="form-label">State</label>
-        <select id="inputState" class="form-select" required>
-          <option selected>Choose...</option>
-          <option>...</option>
-        </select>
-      </div>
+
       <div class="col-12 submit">
         <button type="submit" class="btn btn-primary">Order Now</button>
       </div>
