@@ -127,4 +127,9 @@ div.col h3{
 .item-card{
     padding: 12px;
     box-shadow: 0 2px 6px rgba(65, 11, 16, .15)
+
+.flex-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
 }

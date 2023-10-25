@@ -82,7 +82,7 @@ function updatecart(cart){
             document.getElementById("r"+item).innerHTML=`<button id="`+item+`" class="btn cart" type="button">Add</button>`;
         }
         else{
-            document.getElementById("r"+item).innerHTML="<button id='minus"+item+"' class='btn minus'>-</button><div id='val"+item+"' style='text-align:center;'>"+cart[item].quantity+"</div><button id='plus"+item+"' class='btn plus'>+</button>";
+            document.getElementById("r"+item).innerHTML=`<div><button id='minus${item}' class='btn minus'> -</button></div><div id='val${item}' style='font-size: 3vh;'> ${cart[item].quantity} </div> <div><button id='plus${item}' class='btn plus'>+ </button> </div>`;        
         }
     }
     localStorage.setItem('cart', JSON.stringify(cart));
