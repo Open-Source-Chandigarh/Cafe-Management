@@ -81,24 +81,35 @@
   <div class="col my-4">
     <h2> Step 2 - Enter Address & Other Details</h2>
     <form class="row g-3">
-      <div class="col-md-6" >
-        <label for="inputEmail4" class="form-label">Name</label>
-        <input type="text" class="form-control" id="inputEmail4" required>
-      </div> 
-      <div class="col-md-6">
-        <label for="inputphone" class="form-label">Number</label>
-        <input type="tel" class="form-control" id="inputPassword4" maxlength="10" required>
+      <div class="col-md-6" > 
+              <div class="col-12">
+                  <div class="form-group">
+                      <label for="inputEmail4" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="inputEmail4" required>
+                  </div>
+              </div>
+              <div class="col-12">
+                  <div class="form-group">
+                      <label for="inputphone" class="form-label">Number</label>
+                      <input type="tel" class="form-control" id="inputPassword4" maxlength="10" required>
+                  </div>
+              </div>
+              <div class="col-12">
+                  <div class="form-group">
+                      <label for="inputAddress" class="form-label">Email Address</label>
+                      <input type="email" class="form-control" id="inputAddress" placeholder="email@ServiceProvider.com" required>
+                  </div>
+              </div>
+              <div class="col-12">
+                  <div class="form-group">
+                      <label for="inputAddress2" class="form-label">Address</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio or floor" required>
+                  </div>
+              </div>
+          </form>
       </div>
-      <div class="col-12">
-        <label for="inputAddress" class="form-label">Email Address</label>
-        <input type="email" class="form-control" id="inputAddress" placeholder="email@ServiceProvider.com" required>
-      </div>
-      <div class="col-12">
-        <label for="inputAddress2" class="form-label">Address</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio or floor" required>
-      </div>
-   
-      <div class="col-md-4">
+      
+      <div class="col-md-4" style="color: aliceblue; margin-left: 1.5% ;">
         <label for="inputState" class="form-label">State</label>
         <select id="inputState" class="form-select" required>
           <option selected>Select your State</option>
@@ -132,8 +143,8 @@
         <option>West Bengal</option>
         </select>
       </div>
-      <div class="col-md-6">
-        <label for="inputCity" class="form-label">City</label>
+      <div class="col-md-6" style="color: aliceblue; margin-left: 1.5% ;">
+        <label for="inputCity" class="form-label" >City</label>
         <input type="text" class="form-control" id="inputCity" required>
       </div>
 

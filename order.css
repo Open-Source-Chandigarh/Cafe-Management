@@ -5,8 +5,13 @@ h2{
     padding: 20px;
     margin-top: 10px;
     font-family:fantasy;
-    width: 100%;
+    width: 90%;
     margin-bottom: 1%;
+    opacity: 1;
+    padding: 20px;
+    margin-left:70px;
+    border-radius: 25px;
+
 }
 
 row{
@@ -17,11 +22,13 @@ row{
 form{
     padding: 20px;
     color: white;
+    width: 50%;
 }
 
 li span{
     color: black !important;
     background-color: rgb(255, 196, 0);
+    
 }
 
 body{
@@ -55,6 +62,7 @@ body{
     background-color: #ecd448;
     font-weight: bolder;
     box-shadow: 0 2px 0 2px #000;
+    margin-top: 20px;
 }
    
 .btn:before {
