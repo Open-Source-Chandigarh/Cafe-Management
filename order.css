@@ -22,7 +22,8 @@ row{
 form{
     padding: 20px;
     color: white;
-    width: 50%;
+    width: 98%;
+
 }
 
 li span{
@@ -106,3 +107,7 @@ body{
     color: #000000;
 }
 
+
+#inputAddress, #inputAddress2{
+    width: 55%;
+}
