@@ -75,7 +75,7 @@ tr:hover td{
     position: fixed;
     top: 0;
     right: 0;
-    width: 250px;
+    width: 350px;
     background-color: white;
     /* visibility: hidden; */
 }
@@ -104,26 +104,45 @@ div.col h3{
 .cartq{
     text-align: center;
     padding-left: 10px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .remove{
     background-color: rgb(222, 86, 86);
     border: 1px;
     border-radius: 8px;
-    width: 80%;
+    width: 50%;
+}
+.remove:hover{
+    background: #E06161;
 }
 
 .fb{
-    background-color: rgb(222, 86, 86);
+    background-color: #2F4858;
+    color: white;
     width: 80%;
     border-radius: 8px;
     border: 1px;
+    height: 35px;
 }
 
 .cartsidebar{
     background-color: black;
     width: 100px;
+}
+
+.flex-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
+}
+.item-card{
+    padding: 12px;
+    box-shadow: 0 2px 6px rgba(65, 11, 16, .15)
+}
+
+.fb:hover{
+    background: #385568;
 }
 
 .flex-menu {
