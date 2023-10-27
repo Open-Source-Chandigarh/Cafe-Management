@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
@@ -54,6 +56,12 @@
                     <li class="nav-item">
                         <a href="faq.html" class="nav-link active" style="color:rgba(255, 255, 255);">FAQ</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="signup.html" class="nav-link active" style="color:rgba(255, 255, 255);">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link active" style="color:rgba(255, 255, 255);">Login</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -62,35 +70,16 @@
         <div class="sidebar h-100" style="overflow-y: scroll;">
             <br>
             <div class="container">
-                <div class="row">
-                    <div class="col-10" style="text-align: center;">
-                        <h3 style="color: #2F4858;padding-left: 50px;font-weight: bold;">Cart</h3>
-                    </div>
-                    <div class="col-2"><div type="button" style="background: #2F4858;border-radius: 12px;color: white;" class="close col">X</div></div>
+            <div class="row">
+                <div class="col-10" style="text-align: center;">
+                    <h3 style="color: #2F4858;padding-left: 50px;font-weight: bold;">Cart</h3>
                 </div>
-                <br>
-                <div id="divcart">    
-                <div class="card item-card" id="cartcontainer" style="border-bottom-left-radius: 0px;border-bottom-right-radius: 0px; border-top-left-radius: 12px;border-top-right-radius: 12px;">
-
+                <div class="col-2"><div type="button" style="background: #2F4858;border-radius: 12px;color: white;" class="close col">X</div>
                 </div>
-                <div class="footer">
-                    <div class="card" style="border-top-right-radius: 0px;border-top-left-radius: 0px;border-bottom-left-radius: 12px;border-bottom-right-radius: 12px;padding:12px;background-color: #de5656;">
-                        <div class="row" >
-                            <div class="col-6" style="text-align: end;font-weight: bold;font-size: large;">Total:</div>
-                            <div class="col-6" style="text-align: start;font-weight: bold;font-size: large;"><label id="lbltotal"></label></div>
-                        </div>
-                        <div class="row" style="height: 15px;"></div>
-                        <div class="row">
-                            <div class="col" style="text-align: center;">
-                                <button class="fb" style="background-color: #2F4858;color: white;">Checkout<a href="order.html"></a></button>
-                            </div>
-                        </div>
-                        <div class="row" style="height: 15px;"></div>
-                        <div class="row">
-                            <div class="col" style="text-align: center;"><button class="fb" id="clear">Clear Cart</button></div>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <br>
+            <div id="divcart">   
+            <div class="card item-card" id="cartcontainer" style="border-bottom-left-radius: 0px;border-bottom-right-radius: 0px; border-top-left-radius: 12px;border-top-right-radius: 12px;">
                 <!-- <div class="row">
                     <div class="col-md-6">
                         <div class="row">name</div>
@@ -101,17 +90,37 @@
                         <div class="row" type="button">remove</div>
                     </div>
                 </div> -->
-                </div>
-                <div id="divempty" style="display: none;">
-                    <div class="card item-card" id="cartcontainer" style="border-radius: 12px;padding:30px;">
-                        <label style="text-align: center;">Your Cart is Empty</label>
-
+            </div>
+            <div class="footer">
+                <div class="card" style="border-top-right-radius: 0px;border-top-left-radius: 0px;border-bottom-left-radius: 12px;border-bottom-right-radius: 12px;padding:12px;background-color: #de5656;">
+                    <div class="row" >
+                        <div class="col-6" style="text-align: end;font-weight: bold;font-size: large;">Total:</div>
+                        <div class="col-6" style="text-align: start;font-weight: bold;font-size: large;"><label id="lbltotal"></label></div>
+                    </div>
+                    <div class="row" style="height: 15px;"></div>
+                    <div class="row">
+                        <div class="col" style="text-align: center;">
+                            <button class="fb" style="">Checkout<a href="order.html"></a></button>
+                        </div>
+                    </div>
+                    <div class="row" style="height: 15px;"></div>
+                    <div class="row">
+                        <div class="col" style="text-align: center;">
+                            <button class="fb" id="clear">Clear Cart</button>
+                        </div>
                     </div>
                 </div>
             </div>
+            </div>
+            <div id="divempty" style="display: none;">
+                <div class="card item-card" id="cartcontainer" style="border-radius: 12px;padding:30px;">
+                    <label style="text-align: center;">Your Cart is Empty</label>
+
+                </div>
+            </div>
+            </div>
             <br>
             <br>
-    
         </div>
     </div>
     <h1 class="text-bg-dark">CAFE MENU</h1>
@@ -122,52 +131,52 @@
                 <tr>
                     <th>ITEMS</th>
                     <th style="width:117px">PRICE</th>
-                    <th style="width: 100px;"></th>
+                    <th style="width: 120px;"></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td id="itemi1">Hot Coffee</td>
                     <td id="pricei1">Rs.80</td>
-                    <td id="ri1" class="add"><button id="i1" class="btn cart" type="button">Add</button></td>
+                    <td id="ri1" class="add flex-menu"><button id="i1" class="btn cart" type="button">Add</button></td>
                 </tr>
                 <tr>
                     <td id="itemi2">Black Coffee</td>
                     <td id="pricei2">Rs.80</td>
-                    <td id="ri2" class="add"><button id="i2" class="btn cart" type="button">Add</button></td>
+                    <td id="ri2" class="add flex-menu"><button id="i2" class="btn cart" type="button">Add</button></td>
                 </tr>
                 <tr>
                     <td id="itemi3">Hazelnut Cold Coffee</td>
                     <td id="pricei3">Rs.125</td>
-                    <td id="ri3" class="add"><button id="i3" class="btn cart" type="button">Add</button></td>
+                    <td id="ri3" class="add flex-menu"><button id="i3" class="btn cart" type="button">Add</button></td>
                 </tr>
                 <tr>
                     <td id="itemi4">Chocolate Cold Coffee</td>
                     <td id="pricei4">Rs.125</td>
-                    <td id="ri4" class="add"><button id="i4" class="btn cart" type="button">Add</button></td>
+                    <td id="ri4" class="add flex-menu"><button id="i4" class="btn cart" type="button">Add</button></td>
                 </tr>
                 <tr>
                     <td id="itemi5">Caramel Cold Coffee</td>
                     <td id="pricei5">Rs.125</td>
-                    <td id="ri5" class="add"><button id="i5" class="btn cart" type="button">Add</button></td>
+                    <td id="ri5" class="add flex-menu"><button id="i5" class="btn cart" type="button">Add</button></td>
                 </tr>
                 <tr>
                     <td id="itemi6">Classic Cold Coffee</td>
                     <td id="pricei6">Rs.100</td>
-                    <td id="ri6" class="add"><button id="i6" class="btn cart" type="button">Add</button></td>
+                    <td id="ri6" class="add flex-menu"><button id="i6" class="btn cart" type="button">Add</button></td>
                 </tr>
                 <tr>
                     <td id="itemi7">Iced Americano</td>
                     <td id="pricei7">Rs.160</td>
-                    <td id="ri7" class="add">
-                        <buttonn id="i7" class="btn cart" type="button">Add</buttonn>
+                    <td id="ri7" class="add flex-menu">
+                        <button id="i7" class="btn cart" type="button">Add</button>
                     </td>
                 </tr>
                 <tr>
                     <td id="itemi8">Maggie</td>
                     <td id="pricei8">Rs.30</td>
-                    <td id="ri8" class="add">
-                        <buttonn id="i8" class="btn cart" type="button">Add</buttonn>
+                    <td id="ri8" class="add flex-menu">
+                        <button id="i8" class="btn cart" type="button">Add</button>
                     </td>
                 </tr>
             </tbody>

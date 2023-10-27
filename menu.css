@@ -89,6 +89,10 @@ div.col h3{
     padding-left: 10px;
 }
 
+.sidebar .row{
+    padding-top: 10px;
+}
+
 .sidebar{
     background-color:darkgrey !important;
 }
@@ -109,6 +113,9 @@ div.col h3{
     border-radius: 8px;
     width: 50%;
 }
+.remove:hover{
+    background: #E06161;
+}
 
 .fb{
     background-color: #2F4858;
@@ -123,8 +130,17 @@ div.col h3{
     background-color: black;
     width: 100px;
 }
- 
+
+.flex-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
+}
 .item-card{
     padding: 12px;
     box-shadow: 0 2px 6px rgba(65, 11, 16, .15)
+}
+
+.fb:hover{
+    background: #385568;
 }

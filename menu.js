@@ -82,7 +82,7 @@ function updatecart(cart){
             document.getElementById("r"+item).innerHTML=`<button id="`+item+`" class="btn cart" type="button">Add</button>`;
         }
         else{
-            document.getElementById("r"+item).innerHTML="<button id='minus"+item+"' class='btn minus'>-</button><div id='val"+item+"' style='text-align:center;'>"+cart[item].quantity+"</div><button id='plus"+item+"' class='btn plus'>+</button>";
+            document.getElementById("r"+item).innerHTML=`<div><button id='minus${item}' class='btn minus'> -</button></div><div id='val${item}' style='font-size: 3vh;'> ${cart[item].quantity} </div> <div><button id='plus${item}' class='btn plus'>+ </button> </div>`;        
         }
     }
     localStorage.setItem('cart', JSON.stringify(cart));
@@ -97,25 +97,25 @@ function addtocart(cart){
     let str=``
     for(let item in cart){
         str+=`
-            <div class="row">
-                <div class="col-6">
-                    <strong>`+cart[item].name+`</strong>
-                </div>
-                <div class="col-6" style="text-align:end;" >
-                    <strong>Rs.`+cart[item].price+`</strong>
-                </div>
+        <div class="row">
+            <div class="col-6">
+                <strong>`+cart[item].name+`</strong>
             </div>
-            <div class="row" style="height:5px"></div>
-            <div class="row">
-                    <div class="col-6 cartq" style="text-align:start;">
-                        <label>Quantity: <strong>`+cart[item].quantity+`</strong></label>
-                    </div>
-                    <div class="col-6 cartprice"  style="padding-right:10px;justify-content:end;">
-                        <button class="remove" id="remove`+item+`"><i class='bx bx-trash-alt' style="color:black" undefined ></i></button>
-                    </div>
+            <div class="col-6" style="text-align:end;" >
+                <strong>Rs.`+cart[item].price+`</strong>
             </div>
-        <hr>
-        `;
+        </div>
+        <div class="row" style="height:5px"></div>
+        <div class="row">
+                <div class="col-6 cartq" style="text-align:start;">
+                    <label>Quantity: <strong>`+cart[item].quantity+`</strong></label>
+                </div>
+                <div class="col-6 cartprice"  style="padding-right:10px;justify-content:end;">
+                    <button class="remove" id="remove`+item+`"><i class='bx bx-trash-alt' style="color:black" undefined ></i></button>
+                </div>
+        </div>
+    <hr>
+    `;
     }
     
     document.getElementById("cartcontainer").innerHTML=str;
