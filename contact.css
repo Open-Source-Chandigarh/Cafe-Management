@@ -35,3 +35,7 @@ input:focus:invalid{
     background-color:rgb(247, 129, 129);
 }
 
+footer{
+    bottom: 0px;
+    text-align: center;
+}

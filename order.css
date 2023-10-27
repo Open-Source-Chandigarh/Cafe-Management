@@ -111,3 +111,8 @@ body{
 #inputAddress, #inputAddress2{
     width: 55%;
 }
+
+footer{
+    bottom: 0px;
+    text-align: center;
+}
