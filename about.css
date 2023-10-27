@@ -88,3 +88,7 @@ h4{
 .card-container-imagia:hover .back-imagia{
     visibility: visible;
 }
+footer{
+    bottom: 0px;
+    text-align: center;
+}
