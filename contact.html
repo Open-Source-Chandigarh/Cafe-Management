@@ -69,7 +69,7 @@
       </div>
   </nav>
     <section>
-      <div class="container">
+      <section class="container">
         <div class="row mb-5 my-5">
           <div class="col-md-8 col-xl-6 text-center mx-auto">
             Contact Us
@@ -79,7 +79,8 @@
             </p>
           </div>
         </div>
-        <div class="row d-flex justify-content-center">
+        
+     <div class="row d-flex justify-content-center">
           <div class="col-md-6 col-lg-4 col-xl-4">
             <div
               class="d-flex flex-column justify-content-center align-items-start h-100"
@@ -105,6 +106,8 @@
                 <div class="px-2">
                   <h6>Phone</h6>
                   <p style="font-size: 15px">+91 XXXXX XXXXX</p>
+                  
+                  
                 </div>
               </div>
               <div class="d-flex align-items-center p-3">
@@ -156,19 +159,22 @@
               </div>
             </div>
           </div>
+        
           <div class="col-md-6 col-lg-5 col-xl-4">
             <div class="px-4">
               <form action="" class="p-3 p-xl-4">
-                <div class="mb-2 w-100">
-                  <input
-                    type="text"
+                <div class="mb-2_w-100">
+                  <label class="text">Name:</label><br>
+                  <input 
+                    type="text" 
                     name="name"
                     id="name"
                     placeholder="Enter Your Name"
                     required
                   />
                 </div>
-                <div class="mb-3 w-100">
+                <div class="mb-3_w-100">
+                  <label class="text">Email:</label><br>
                   <input
                     type="email"
                     name="mail"
@@ -177,7 +183,8 @@
                     required
                   />
                 </div>
-                <div class="mb-1 w-100">
+                <div class="mb-1_w-100">
+                  <label class="text">Feedback:</label><br>
                   <textarea
                     name="Message"
                     id="Message"
@@ -188,13 +195,12 @@
                   ></textarea>
                 </div>
                 <div>
-                  <button type="submit" class="btn btn-primary w-100">Send</button>
+                  <button type="submit" class="btn_btn-primary_w-100">Send</button>
                 </div>
               </form>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        
+   
   </body>
 </html>
