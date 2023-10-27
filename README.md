@@ -1,7 +1,8 @@
 # Cafe Management 
 
 An online portal for a cafe for ordering coffee or snacks or whatever else it offers.
-<img width="944" alt="image" src="https://github.com/Kavyam172/Cafe-Management/assets/124245507/75e2ecaa-3c77-45c9-ae88-53a328453343">
+<img width="927" alt="image" src="https://github.com/Open-Source-Chandigarh/Cafe-Management/assets/124245507/b5937489-da33-4858-bba2-d81323861292">
+
 
 
 
@@ -22,7 +23,7 @@ Steps to contribute:
 ```
 4. Make changes to the code.
 5. Once you are satisfied, commit the changes and and push your code to the forked repository.
-6. Create a pull request from the forked repository to this repository.Make sure to provide a concise title and description.Your pull request will only be accepted if the issue is assigned to you.
+6. Create a pull request from the forked repository to this repository.Make sure to provide a concise title and description and link the related issue to the pull request.Your pull request will only be accepted if the issue is assigned to you.
 
 We will review your code and merge it into the project. 
 Please adhere to the code of conduct mentioned in [code_of_conduct.md](https://github.com/Open-Source-Chandigarh/Cafe-Management/blob/main/conduct_of_code.md).

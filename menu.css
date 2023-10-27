@@ -144,3 +144,9 @@ div.col h3{
 .fb:hover{
     background: #385568;
 }
+
+.flex-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
+}
