@@ -14,8 +14,8 @@
         crossorigin="anonymous"></script>
     <script src="jquery-3.6.4.min.js"></script>
     <script src="menu.js"></script>
-
-
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="mynav.css">
     <script src="menu.js"></script>
@@ -67,15 +67,19 @@
         </div>
     </nav>
     <div class="wrapper h-100">
-        <div class="sidebar h-100">
+        <div class="sidebar h-100" style="overflow-y: scroll;">
+            <br>
+            <div class="container">
             <div class="row">
-                <div class="col">
-                    <h3>Cart</h3>
+                <div class="col-10" style="text-align: center;">
+                    <h3 style="color: #2F4858;padding-left: 50px;font-weight: bold;">Cart</h3>
                 </div>
-
-                <div type="button" class="close col">X</div>
+                <div class="col-2"><div type="button" style="background: #2F4858;border-radius: 12px;color: white;" class="close col">X</div>
+                </div>
             </div>
-            <div class="container" id="cartcontainer">
+            <br>
+            <div id="divcart">   
+            <div class="card item-card" id="cartcontainer" style="border-bottom-left-radius: 0px;border-bottom-right-radius: 0px; border-top-left-radius: 12px;border-top-right-radius: 12px;">
                 <!-- <div class="row">
                     <div class="col-md-6">
                         <div class="row">name</div>
@@ -87,18 +91,36 @@
                     </div>
                 </div> -->
             </div>
-            <hr>
             <div class="footer">
-                <div class="row">
-                    <div class="col" style="text-align: center;"><button class="fb" id="clear">Clear Cart</button></div>
-                    <div class="col"><a href="order.html"><button class="fb" style="background-color: rgb(89, 89, 228);">Checkout</button></a></div>
-                    
-                    
+                <div class="card" style="border-top-right-radius: 0px;border-top-left-radius: 0px;border-bottom-left-radius: 12px;border-bottom-right-radius: 12px;padding:12px;background-color: #de5656;">
+                    <div class="row" >
+                        <div class="col-6" style="text-align: end;font-weight: bold;font-size: large;">Total:</div>
+                        <div class="col-6" style="text-align: start;font-weight: bold;font-size: large;"><label id="lbltotal"></label></div>
+                    </div>
+                    <div class="row" style="height: 15px;"></div>
+                    <div class="row">
+                        <div class="col" style="text-align: center;">
+                            <button class="fb">Checkout<a href="order.html"></a></button>
+                        </div>
+                    </div>
+                    <div class="row" style="height: 15px;"></div>
+                    <div class="row">
+                        <div class="col" style="text-align: center;">
+                            <button class="fb" id="clear">Clear Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div id="divempty" style="display: none;">
+                <div class="card item-card" id="cartcontainer" style="border-radius: 12px;padding:30px;">
+                    <label style="text-align: center;">Your Cart is Empty</label>
 
                 </div>
             </div>
-
-
+            </div>
+            <br>
+            <br>
         </div>
     </div>
     <h1 class="text-bg-dark">CAFE MENU</h1>
