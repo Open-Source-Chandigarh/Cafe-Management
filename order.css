@@ -1,27 +1,35 @@
 h2{
     text-align: center;
-    background-color: black;
+    background-color: rgb(85, 54, 0);
     color: white;
     padding: 20px;
     margin-top: 10px;
     font-family:fantasy;
-    width: 100%;
+    width: 90%;
     margin-bottom: 1%;
+    opacity: 1;
+    padding: 20px;
+    margin-left:70px;
+    border-radius: 25px;
+
 }
 
-.row{
+row{
     width: 100%;
     margin: 0px;
-}
+} 
 
 form{
     padding: 20px;
     color: white;
+    width: 98%;
+
 }
 
 li span{
     color: black !important;
     background-color: rgb(255, 196, 0);
+    
 }
 
 body{
@@ -55,6 +63,7 @@ body{
     background-color: #ecd448;
     font-weight: bolder;
     box-shadow: 0 2px 0 2px #000;
+    margin-top: 20px;
 }
    
 .btn:before {
@@ -96,4 +105,9 @@ body{
 }
 .hide_as_link :active {
     color: #000000;
+}
+
+
+#inputAddress, #inputAddress2{
+    width: 55%;
 }

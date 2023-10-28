@@ -26,6 +26,7 @@ $(document).ready(function () {
 
     // show and hide cart
     $(".cartsidebar").click(function () {
+        checkcart(cart);
         $(".sidebar").show(500);
         $(this).hide();
     });
@@ -92,22 +93,56 @@ function updatecart(cart){
 // add items to the cart sidebar
 function addtocart(cart){
     // console.log(1);
+    checkcart(cart);
     let str=``
     for(let item in cart){
-        str+=`<div class="row">
-        <div class="col-md-6">
-            <div class="row cartname"><strong>`+cart[item].name+`</strong></div>
-            <div class="row cartq w-100">Quantity: `+cart[item].quantity+`</div>
+        str+=`
+        <div class="row">
+            <div class="col-6">
+                <strong>`+cart[item].name+`</strong>
+            </div>
+            <div class="col-6" style="text-align:end;" >
+                <strong>Rs.`+cart[item].price+`</strong>
+            </div>
         </div>
-        <div class="col-md-6">
-            <div class="row cartprice"><strong>Rs.`+cart[item].price+`</strong></div>
-            <div class="row rem"><button class="remove" id="remove`+item+`">remove</button></div>
+        <div class="row" style="height:5px"></div>
+        <div class="row">
+                <div class="col-6 cartq" style="text-align:start;">
+                    <label>Quantity: <strong>`+cart[item].quantity+`</strong></label>
+                </div>
+                <div class="col-6 cartprice"  style="padding-right:10px;justify-content:end;">
+                    <button class="remove" id="remove`+item+`"><i class='bx bx-trash-alt' style="color:black" undefined ></i></button>
+                </div>
         </div>
-    </div>`;
+    <hr>
+    `;
     }
     
     document.getElementById("cartcontainer").innerHTML=str;
+    totprice(cart);
 }
+
+//calculating totprice = itemprice*qty
+function totprice(cart){
+    let lblprice = document.getElementById('lbltotal');
+    let finalprice = 0;
+    for(let item in cart){
+        finalprice += (cart[item].price * cart[item].quantity);
+    }
+    lblprice.innerHTML= finalprice;
+}
+
+//check the cart if it is empty or not
+function checkcart(cart){
+    if(Object.keys(cart).length === 0){
+        document.getElementById('divempty').style.display = 'block';
+        document.getElementById('divcart').style.display = 'none';
+    }
+    else{
+        document.getElementById('divempty').style.display = 'none';
+        document.getElementById('divcart').style.display = 'block';
+    }
+};
 
 //clear cart by looping through cart and deleting all items
 function clearcart(cart){
