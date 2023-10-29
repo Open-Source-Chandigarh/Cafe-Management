@@ -56,6 +56,20 @@
         button[type="submit"]:hover {
             background-color: #0056b3;
         }
+         .form-group {
+            position: relative;
+        }
+        .form-group input[type="password"] {
+            padding-right: 30px;
+        }
+        .form-group .toggle-icon {
+            position: absolute;
+            top: 70%;
+            left: 90%;
+            width: 10%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -118,9 +132,10 @@
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
             </div>
-            <div class="form-group">
+           <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="passwordField"  name="password" required>
+                <i id="togglePassword" class="toggle-icon" onclick="togglePasswordVisibility()">👁</i>
             </div>
             <div class="form-group" >
                 <button type="submit">Sign Up</button>
@@ -128,6 +143,17 @@
         </form>
         <p>Already have an account? <a href="login.html">Login here</a>.</p>
     </div>
-    <!-- Your signup form ends here -->
+    <script>  function togglePasswordVisibility() {
+    var passwordField = document.getElementById("passwordField");
+    var togglePassword = document.getElementById("togglePassword");
+
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+        togglePassword.textContent = "👁️"; 
+    } else {
+        passwordField.type = "password";
+        togglePassword.textContent = "👁"; 
+    }
+}</script>
 </body>
 </html>
