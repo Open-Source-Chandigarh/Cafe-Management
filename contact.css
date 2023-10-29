@@ -37,13 +37,13 @@ input:focus:invalid{
     background-color:rgb(247, 129, 129);
 }
 .mb-2_w-100,.mb-3_w-100,.mb-1_w-100{
-margin-left: -130px;
+margin-left: 250px;
 
 
 
 }
 .btn_btn-primary_w-100{
-    margin-left: -75px;
+    margin-left: 330px;
     width: 100px;
     border-radius: 15px;
     height: 50px;
