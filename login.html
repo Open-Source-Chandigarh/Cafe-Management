@@ -55,6 +55,20 @@
         button[type="submit"]:hover {
             background-color: #0056b3;
         }
+                .form-group {
+            position: relative;
+        }
+        .form-group input[type="password"] {
+            padding-right: 30px;
+        }
+        .form-group .toggle-icon {
+            position: absolute;
+            top: 70%;
+            left: 90%;
+            width: 10%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -110,11 +124,12 @@
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required>
             </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-                <a href="forgotpassword.html " class="forgotps"   >Forgot Password?</a>
+        <div class="form-group">
+                    <label for="password">Password</label>
+                <input type="password" id="passwordField" placeholder="Password" name="password" required>
+                <i id="togglePassword" class="toggle-icon" onclick="togglePasswordVisibility()">👁</i>
             </div>
+            <a href="forgotpassword.html " class="forgotps" >Forgot Password?</a>
             <div class="form-group" >
                 <button type="submit">Login</button>
             </div>
@@ -123,4 +138,18 @@
     </div>
     <!-- Your login form ends here -->
 </body>
+      <script>
+        function togglePasswordVisibility() {
+            var passwordField = document.getElementById("passwordField");
+            var togglePassword = document.getElementById("togglePassword");
+
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                togglePassword.textContent = "👁️"; 
+            } else {
+                passwordField.type = "password";
+                togglePassword.textContent = "👁"; 
+            }
+        }
+    </script>
 </html>
