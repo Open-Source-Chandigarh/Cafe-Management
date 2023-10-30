@@ -11,10 +11,11 @@ body{
 }
 
 .row{
-    background-color: rgba(199, 58, 58, 0.731);
+    background-color:rgba(46, 25, 11, 0.7);
     padding: 10px;
     border-radius: 30px;
     border: 2px solid white;
+    
 }
 
 p{
@@ -25,6 +26,7 @@ input, textarea{
     font-size: 20px;
     border: 2px solid black;
     border-radius: 8px;
+    
 }
 
 input:focus:valid{
@@ -34,4 +36,27 @@ input:focus:valid{
 input:focus:invalid{
     background-color:rgb(247, 129, 129);
 }
+.mb-2_w-100,.mb-3_w-100,.mb-1_w-100{
+margin-left: 250px;
 
+
+
+}
+.btn_btn-primary_w-100{
+    margin-left: 330px;
+    width: 100px;
+    border-radius: 15px;
+    height: 50px;
+    font-size: 20px;
+}
+.text{
+    font-size: 20px;
+
+    
+}
+.btn_btn-primary_w-100:hover{
+    background-color: rgb(99, 75, 43);
+}
+label{
+    margin-top: -50px;
+}
