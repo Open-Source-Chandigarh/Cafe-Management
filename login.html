@@ -131,7 +131,7 @@
         <div class="form-group">
                     <label for="password">Password</label>
                 <input type="password" id="passwordField" placeholder="Password" name="password" required>
-                <i id="togglePassword" class="toggle-icon" onclick="togglePasswordVisibility()">👁</i>
+                <i id="togglePassword" class="toggle-icon" onclick="togglePasswordVisibility()"><img width="20px" src="images/hide.png"></i>
             </div>
             <a href="forgotpassword.html " class="forgotps" >Forgot Password?</a>
             <div class="form-group" >
@@ -143,17 +143,19 @@
     <!-- Your login form ends here -->
 </body>
       <script>
-        function togglePasswordVisibility() {
-            var passwordField = document.getElementById("passwordField");
-            var togglePassword = document.getElementById("togglePassword");
+      function togglePasswordVisibility() {
+    var passwordField = document.getElementById("passwordField");
+    var togglePassword = document.getElementById("togglePassword");
 
-            if (passwordField.type === "password") {
-                passwordField.type = "text";
-                togglePassword.textContent = "👁️"; 
-            } else {
-                passwordField.type = "password";
-                togglePassword.textContent = "👁"; 
-            }
-        }
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+        togglePassword.innerHTML = '<img src="images/view.png" width="20px" alt="Open Eye">'; 
+    } else {
+        passwordField.type = "password";
+        togglePassword.innerHTML = '<img src="images/hide.png" width="20px"  alt="Closed Eye">'; 
+    }
+}
+
     </script>
+
 </html>
