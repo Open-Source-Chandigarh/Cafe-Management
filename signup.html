@@ -139,7 +139,7 @@
            <div class="form-group">
                 <label for="password">Password</label>
                 <input type="password" id="passwordField"  name="password" required>
-                <i id="togglePassword" class="toggle-icon" onclick="togglePasswordVisibility()">👁</i>
+                <i id="togglePassword" class="toggle-icon" onclick="togglePasswordVisibility()"><img width="20px" src="images/hide.png"></i>
             </div>
             <div class="form-group" >
                 <button type="submit">Sign Up</button>
@@ -147,17 +147,20 @@
         </form>
         <p>Already have an account? <a href="login.html">Login here</a>.</p>
     </div>
-    <script>  function togglePasswordVisibility() {
+    <script>
+      function togglePasswordVisibility() {
     var passwordField = document.getElementById("passwordField");
     var togglePassword = document.getElementById("togglePassword");
 
     if (passwordField.type === "password") {
         passwordField.type = "text";
-        togglePassword.textContent = "👁️"; 
+        togglePassword.innerHTML = '<img src="images/view.png" width="20px" alt="Open Eye">'; 
     } else {
         passwordField.type = "password";
-        togglePassword.textContent = "👁"; 
-    }
-}</script>
+        togglePassword.innerHTML = '<img src="images/hide.png" width="20px"  alt="Closed Eye">'; 
+}
+
+    </script>
+
 </body>
 </html>
